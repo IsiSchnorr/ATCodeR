@@ -17,11 +17,12 @@ You can install the development version of ATCodeR like so:
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example:
 
 ``` r
 library(ATCodeR)
-## basic example code
+
+output_dataframe <- ATCtransfrom(input_dataframe, "Substances")
 ```
 
 # ATCodeR
