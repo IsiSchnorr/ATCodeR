@@ -24,3 +24,4 @@ library(ATCodeR)
 ## basic example code
 ```
 
+# ATCodeR
