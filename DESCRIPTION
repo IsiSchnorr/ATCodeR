@@ -1,0 +1,17 @@
+Package: ATCodeR
+Type: Package
+Version: 0.1.0
+Date: 2024-11-05
+Imports: tidyr, tidyverse, quanteda
+Title: A dictionary-based R-tool to standardize medication free-text into ATC Codes
+Author: Isabel Schnorr and Daniel Maier
+Maintainer: Isabel Schnorr <i.schnorr@med.uni-frankfurt.de>
+Description: Using a dictionary-based approach, the R-tool converts free-text medication  data into structured and standardized ATC codes. The resulting output is a structured data  frame containing columns for antineoplastic substances, other medications, and  supplementary information
+License: The ATC dictionary is derived from WidO (https://www.wido.de/publikationen-produkte/analytik/arzneimittel-klassifikation/)
+Encoding: UTF-8
+LazyData: true
+StagedInstall: no
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
