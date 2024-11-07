@@ -22,7 +22,7 @@ This is a basic example:
 ``` r
 library(ATCodeR)
 
-output_dataframe <- ATCtransfrom(input_dataframe, "Substances")
+output_dataframe <- ATCtransfrom(input_dataframe, column_name)
 ```
 
 # ATCodeR
