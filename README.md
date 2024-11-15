@@ -12,17 +12,29 @@ The goal of ATCodeR is to convert free-text medication  data into structured and
 You can install the development version of ATCodeR like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install the devtools package to enable installation from github
+install.packages("devtools")
+
+# install the ATCodeR package from github
+devtools::install_github(repo = "https://github.com/IsiSchnorr/ATCodeR")
 ```
 
 ## Example
 
-This is a basic example:
+This is an example:
 
 ``` r
+# Load ATCodeR package
 library(ATCodeR)
 
-output_dataframe <- ATCtransfrom(input_dataframe, column_name)
+# Load the example data
+data("example_data")
+
+# Apply the ATCtransfrom function to the example data
+output_dataframe <- ATCtransform(input.df = example_data, column_name = "subs")
+
+# View output
+View(output_dataframe)
+
 ```
 
-# ATCodeR
