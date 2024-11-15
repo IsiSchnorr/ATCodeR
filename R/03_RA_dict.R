@@ -2,6 +2,8 @@
 pacman::p_load(dplyr, stringr, quanteda, readxl)
 
 dict_RA <-  quanteda::dictionary(
+
+  #COMMENT D: Replace with relative path to dictionary
   file = "C:\\Users\\ischn\\Desktop\\RoteListe\\regime_dictionary_v1.cat")
 
 # Add new entries in dictionary
@@ -141,4 +143,6 @@ if ("REGIME" %in% names(dict_RA)) {
 #add all caps
 
 # Save the updated dictionary
+
+#COMMENT: Replace with relative path to dictionary
 saveRDS(dict_RA, "C:\\Users\\ischn\\Desktop\\RoteListe\\RA_dictionary_v2.cat")
